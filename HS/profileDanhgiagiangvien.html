@@ -4,7 +4,7 @@
 <head>
 <title> Học Trực Tuyến</title>
 <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css\bootstrap.min.css">
   <link rel="stylesheet" href="Bocuc.css">
   <script src="js\jquery.min.js"></script>
@@ -40,7 +40,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       
-      <p  class="navbar-text" style="color:red">HocSinh</p>
+      <p  class="navbar-text" style="color:red">HocVien</p>
       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Xuất</a></li>
     </ul>
     </div>
@@ -50,67 +50,69 @@
     <div id="left" style="border:0px">
     <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px">Dành cho Hoc sinh</h4>
     <ul class="list-group" style="font-size:15px;">
-    <a href="#" class="list-group-item ">
+    <a href="profilehs.html" class="list-group-item">
       <span class=" glyphicon glyphicon-user"></span> Thông tin cá nhân</a>
      <a href="profileUpdate.html" class="list-group-item">
       <span class=" glyphicon glyphicon-pencil"></span> Cập nhật thông tin</a>
      <a href="profileKhoahoc.html" class="list-group-item ">
      <span class="glyphicon glyphicon-book "></span> Khóa học của tôi</a>
      <a href="profileDKkhoahoc.html" class="list-group-item ">
-     <span class="glyphicon  glyphicon-ok"></span> Đăng kí khóa học</a>
+     <span class="glyphicon glyphicon-ok"></span> Đăng kí khóa học</a>
      <a href="profileTinnhan.html" class="list-group-item ">
      <span class="glyphicon glyphicon-comment"></span> Tin nhắn</a>
-     <a href="profileBaitap.html" class="list-group-item active">
+     <a href="profileBaitap.html" class="list-group-item ">
      <span class="glyphicon glyphicon-paperclip"></span> Bài tập</a>
+      <a href="C:/Users/Admin/Desktop/htmlver1/HS/BaiTapTracNghiem.html" class="list-group-item ">
+     <span class="glyphicon glyphicon-ok-circle"></span> Bài thi trắc nghiệm</a>
+      <a href="C:/Users/Admin/Desktop/htmlver1/HS/profileDanhgiagiangvien.html" class="list-group-item active">
+     <span class="glyphicon glyphicon-ok-circle"></span> Đánh giá giảng viên</a>
     </ul>
     </div>
 
 <div id="content" style="border:0px;margin-left:40px;width:1055px" >
-  <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px" >Kiểm Tra Vòng Lặp</h4>
-<p class="question">1. Vong Lap La Gi?</p>
-<ul class="answers">
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
-</ul>
-<p class="question">1. Vong Lap La Gi?</p>
-<ul class="answers">
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
-</ul>
-
-<div class="container">
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Nộp Bài</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times; </button>
-          <h4 class="modal-title">Thông Báo</h4>
-        </div>
-        <div class="modal-body">
-          <p>Đã Nộp Bài</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-</center> 
-     
+  <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px" >Đánh giá giảng viên </h4>
+      <table class="table table-striped" style="font-size:15px">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Môn Học</th>
+        <th>Giảng Viên</th>
+        <th>Ngày bắt đầu</th>
+        <th>Nội dung đánh giá</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lập Trình C++</td>
+        <td>NguyễnPhước</td>
+        <td>30/6/2016</td>
+        <td><a href="C:/Users/Admin/Desktop/htmlver1/HS/Phieudanhgia.html">Phiếu đánh giá</a></td>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Hóa Đại Cương</td>
+        <td>Nguyễn Đạt</td>
+        <td>20/5/2016</td>
+        <td><a href="">Phiếu đánh giá</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lập Trình Java</td>
+        <td>LêTiến</td>
+        <td>25/6/2016</td>
+        <td><a href="">Phiếu đánh giá</a></td>
+      </tr>
+       <tr>
+        <td>4</td>
+        <td>Toán Cao Cấp</td>
+        <td>Trần Văn Trần</td>
+        <td>25/5/2016</td>
+        <td><a href="">Phiếu đánh giá</a></td>
+      </tr>
+    </tbody>
+    </table>
 </div>
 
     

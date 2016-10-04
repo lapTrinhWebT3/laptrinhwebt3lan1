@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="Bocuc.css">
   <script src="js\jquery.min.js"></script>
   <script src="js\bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="res\js\formchinhsuathongtin.js"></script>
 
 <body>
 
@@ -62,6 +63,10 @@
      <span class="glyphicon glyphicon-comment"></span> Tin nhắn</a>
      <a href="profileBaitap.html" class="list-group-item ">
      <span class="glyphicon glyphicon-paperclip"></span> Bài tập</a>
+      <a href="C:/Users/Admin/Desktop/htmlver1/HS/BaiTapTracNghiem.html" class="list-group-item ">
+     <span class="glyphicon glyphicon-ok-circle"></span> Bài thi trắc nghiệm</a>
+     <a href="C:/Users/Admin/Desktop/htmlver1/HS/profileDanhgiagiangvien.html" class="list-group-item ">
+     <span class="glyphicon glyphicon-ok-circle"></span> Đánh giá giảng viên</a>
     </ul>
     </div>
 
@@ -81,26 +86,32 @@
       <div class="modal-header">
       <h4 class="modal-title">Chỉnh sửa thông tin</h4>
       </div>
-      <div class="modal-body">
+     <form name="update" onsubmit="return ">
+        <div class="modal-body" >
       <ul class="list-group" style="text-align: left;">
           <li class="list-group-item"><strong>Họ Tên: </strong>
-          <input type="username" class="form-control" id="username" placeholder="Nguyễn Văn A">
+          <input type="text" name="username" class="form-control" id="username" placeholder="Nguyễn Văn A" value="">
+          <span class="hihe error" id="name-error"></span>
           </li>
           <li class="list-group-item"><strong>Email: </strong>
-          <input type="email" class="form-control" id="email" placeholder="nguyenvana@gmail.com">
+          <input type="email" name="email" class="form-control" id="email" placeholder="nguyenvana@gmail.com">
+          <span class="hihe error" id="email-error"></span>
           </li>
           <li class="list-group-item"><strong>SĐT: </strong>
-          <input type="tel" class="form-control" id="usrtel" placeholder="0123456798">
+          <input type="tel" name="usrtel" class="form-control" id="usrtel" placeholder="0123456798">
+          <span class="hihe error" id="tel-error"></span>
           </li>
           <li class="list-group-item"><strong>Ngày sinh: </strong>
-          <input type="date" class="form-control" id="bday" placeholder="06/05/1996">    
+          <input type="date" name="bday" class="form-control" id="bday" placeholder="06/05/1996">  
+          <span class="hihe error" id="day-error"></span>  
           </li>
       </ul>
     <div class="modal-footer"> 
-       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       <button type="button" class="btn btn-default" style="background-color:#8258FA;color: white;">SAVE</button>
+       <button  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button  type="submit" class="btn btn-default" style="background-color:#8258FA;color: white;">SAVE</button>
      </div>
     </div>
+     </form>
   </div>
 </div>
 </div>
@@ -115,22 +126,27 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Đổi mật khẩu</h4>
        </div>
-       <div class="modal-body">
+       <form name="contact" onsubmit="return getInfo();" >
+         <div class="modal-body">
         <ul class="list-group" style="text-align: left;">
-          <li class="list-group-item"><strong>Mật khẩu hiện tại </strong>
-          <input type="password" class="form-control" id="pwd" placeholder="*******">
+          <li  class="list-group-item"><strong>Mật khẩu hiện tại </strong>
+          <input type="text" name="password" class="form-control" id="pwd" placeholder="*******">
+           <span class="hihe error" id="pass-error"></span>
           </li>
-          <li class="list-group-item"><strong>Mật khẩu mới  </strong>
-          <input type="password" class="form-control" id="pwd" placeholder="*******">
+          <li  class="list-group-item"><strong>Mật khẩu mới  </strong>
+          <input type="password" name="pwnew" class="form-control" id="pwnew" placeholder="*******">
+          <span class="hihe error" id="pnew-error"></span>
           </li>
           <li class="list-group-item"><strong>Nhật lại mật khẩu mới </strong>
-          <input type="password" class="form-control" id="pwd" placeholder="*******">
+          <input type="password" name="confirm_pass" class="form-control" id="confirm_pass" placeholder="*******">
+          <span class="hihe error" id="confirm-error"></span>
           </li>
       </ul>
         <div class="modal-footer"> 
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         <button type="button" class="btn btn-default" style="background-color:#8258FA;color: white;">SAVE</button>
+         <button  type="submit" class="btn btn-default" style="background-color:#8258FA;color: white;">SAVE</button>
       </div>
+       </form>
       </div>
       </div>
       

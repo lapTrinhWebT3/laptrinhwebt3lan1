@@ -4,11 +4,12 @@
 <head>
 <title> Học Trực Tuyến</title>
 <meta charset="utf-8">
-  <<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css\bootstrap.min.css">
   <link rel="stylesheet" href="Bocuc.css">
   <script src="js\jquery.min.js"></script>
   <script src="js\bootstrap.min.js"></script>
+  <script src="res\js\custum.js"></script>
 
 <body>
 
@@ -40,7 +41,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       
-      <p  class="navbar-text" style="color:red">HocVien</p>
+      <p  class="navbar-text" style="color:red">HocSinh</p>
       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Xuất</a></li>
     </ul>
     </div>
@@ -50,19 +51,19 @@
     <div id="left" style="border:0px">
     <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px">Dành cho Hoc sinh</h4>
     <ul class="list-group" style="font-size:15px;">
-    <a href="profilehs.html" class="list-group-item">
+    <a href="#" class="list-group-item ">
       <span class=" glyphicon glyphicon-user"></span> Thông tin cá nhân</a>
      <a href="profileUpdate.html" class="list-group-item">
       <span class=" glyphicon glyphicon-pencil"></span> Cập nhật thông tin</a>
      <a href="profileKhoahoc.html" class="list-group-item ">
      <span class="glyphicon glyphicon-book "></span> Khóa học của tôi</a>
      <a href="profileDKkhoahoc.html" class="list-group-item ">
-     <span class="glyphicon glyphicon-ok"></span> Đăng kí khóa học</a>
-     <a href="#" class="list-group-item active">
+     <span class="glyphicon  glyphicon-ok"></span> Đăng kí khóa học</a>
+     <a href="profileTinnhan.html" class="list-group-item ">
      <span class="glyphicon glyphicon-comment"></span> Tin nhắn</a>
      <a href="profileBaitap.html" class="list-group-item ">
      <span class="glyphicon glyphicon-paperclip"></span> Bài tập</a>
-      <a href="C:/Users/Admin/Desktop/htmlver1/HS/BaiTapTracNghiem.html" class="list-group-item ">
+      <a href="profileBaitap.html" class="list-group-item active">
      <span class="glyphicon glyphicon-ok-circle"></span> Bài thi trắc nghiệm</a>
       <a href="C:/Users/Admin/Desktop/htmlver1/HS/profileDanhgiagiangvien.html" class="list-group-item ">
      <span class="glyphicon glyphicon-ok-circle"></span> Đánh giá giảng viên</a>
@@ -70,70 +71,73 @@
     </div>
 
 <div id="content" style="border:0px;margin-left:40px;width:1055px" >
-  <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px" >Danh sách tài khoản</h4>
-      <table class="table table-striped" style="font-size:15px">
-    <thead>
-      <tr>
-        <th>STT</th>
-        <th>Môn Học</th>
-        <th>Giảng Viên</th>
-        <th>Email</th>
-        <th>Trạng thái</th>
-        <th>Tin nhắn</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Lập Trình C++</td>
-        <td>NguyễnPhước</td>
-        <td>pjm.master@gmail.com</td>
-        <td>Hoạt động</td>
-        <td><span class="glyphicon glyphicon-comment" data-toggle="modal" data-target="#myModal"> <span class="badge pull-right">1</span></span>
-            <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-        <div class="modal-content">
-       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Form: Nguyễn Đạt</h4>
-       </div>
-       <div class="modal-body">
-        <p>Tin nhắn sẽ hiện ở đây, chào mọi người, em muốn hỏi về các khóa học cũng như học phí của chúng ta</p>
-      </div>
+  <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px" >Lập Trình C </h4>
+    <div id="tracnghiem">
+    <h4>Ngôn Ngữ Lập Trình</h4>
+  <h5>Thời gian: 10 phút. Số câu: 10 câu.</h5>
+  <div id="cauhoi" >
+  <div id="demnguoc">
+     <p style="color: red">Thời gian còn lại </p>
+     <input type="text" name="" id="time" />
+     <script >
+       var number = 600;
+    function thoigian()
+    {
+    //tru 1 don vi 
+        number = number-1;
+        //Nếu con số sau khi trừ khác 0
+        if(number!=0)
+        {
+          //Hiển thị con số lên trình duyệt
+          document.getElementById("time").value = number
+          setTimeout("thoigian()",1000);
+        }
+        //Còn nếu con số sau khi trừ bằng 0
+        else
+        {
+          //Đưa ra câu lệnh kết thúc
+        
+        }
+  };
+    thoigian();
+     </script>
+   </div>
+    <h5>Câu 1:Hàm con được viết như thế nào là đúng </h5>
+  <input type="radio" name ="C1"> <br>
+  <input type="radio" name ="C1"> <br>
+  <input type="radio" name ="C1"> <br>
+  <hr >
+  <h5>Câu 2:Ngôn ngữ lập trình có từ bao h </h5>
+  <input type="radio" name ="C2"> <br>
+  <input type="radio" name ="C2"> <br>
+  <input type="radio" name ="C2"> <br>
+  <hr style="border-bottom: 2px">
+  <h5>Câu 3: </h5>
+  <input type="radio" name ="C3"> <br>
+  <input type="radio" name ="C3"> <br>
+  <input type="radio" name ="C3"> <br>
+  <hr style="border-bottom: 2px">
+  <h5>Câu 4: </h5>
+  <input type="radio" name ="C4"> <br>
+  <input type="radio" name ="C4"> <br>
+  <input type="radio" name ="C4"> <br>
+  <hr style="border-bottom: 2px">
+  <h5>Câu 5: </h5>
+  <input type="radio" name ="C5"> <br>
+  <input type="radio" name ="C5"> <br>
+  <input type="radio" name ="C5"> <br>
+    
   </div>
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Hóa Đại Cương</td>
-        <td>Nguyễn Đạt</td>
-        <td>datmaplu@gmail.com</td>
-        <td>Hoạt động</td>
-        <td><span class="glyphicon glyphicon-comment"></span></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Lập Trình Java</td>
-        <td>LêTiến</td>
-        <td>tienmatngu@gmail.com</td>
-        <td>Offline</td>
-        <td><span class="glyphicon glyphicon-comment"><span class="badge pull-right">1</span></span></td>
-      </tr>
-       <tr>
-        <td>4</td>
-        <td>Toán Cao Cấp</td>
-        <td>Trần Văn Trần</td>
-        <td>phusidateo@gmail.com</td>
-        <td>Offline</td>
-        <td><span class="glyphicon glyphicon-comment"></span></td>
-      </tr>
-    </tbody>
-    </table>
+  <div class="modal-footer" style="margin:20px 200px;"> 
+        <button  type="button" class="btn btn-primary" data-dismiss="modal" >NOP BAI </button>
+      </div>
+    </div> 
+ 
 </div>
 
     
 
-    <div id="footer"></div>
+   
 
 </div>
 
