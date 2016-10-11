@@ -86,7 +86,7 @@
       <div class="modal-header">
       <h4 class="modal-title">Chỉnh sửa thông tin</h4>
       </div>
-     <form name="update" onsubmit="return ">
+     <form name="update" onsubmit="return hoten()">
         <div class="modal-body" >
       <ul class="list-group" style="text-align: left;">
           <li class="list-group-item"><strong>Họ Tên: </strong>
@@ -102,13 +102,13 @@
           <span class="hihe error" id="tel-error"></span>
           </li>
           <li class="list-group-item"><strong>Ngày sinh: </strong>
-          <input type="date" name="bday" class="form-control" id="bday" placeholder="06/05/1996">  
-          <span class="hihe error" id="day-error"></span>  
+          <input type="date" name="age" class="form-control" id="age" placeholder="06/05/1996">  
+          <span class="hihe error" id="age-error"></span>  
           </li>
       </ul>
     <div class="modal-footer"> 
        <button  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       <button  type="submit" class="btn btn-default" style="background-color:#8258FA;color: white;">SAVE</button>
+       <button  type="submit"  class="btn btn-defaul" style="background-color:#8258FA;color: white;">SAVE</button>
      </div>
     </div>
      </form>
