@@ -64,7 +64,7 @@
     <div id="left" style="border:0px"></div>
 
 <div id="content">
-     <form class="form-horizontal">
+      <form class="form-horizontal" name="register" onsubmit="return Dangky();">
   <div class="form-group">
   <div class="title-signup"> ĐĂNG KÝ HỌC TRỰC TUYẾN NGAY BÂY GIỜ</div>
   <div class="sub-title-signup">Để học tập và giao lưu với hàng triệu học viên trên mọi miền đất nước.</div> 
@@ -72,37 +72,43 @@
   <div class="form-group" class="row-signup mg40" >
     <label class="control-label col-sm-4" for="username">Họ và Tên:</label>
     <div class="col-sm-4"> 
-      <input type="username" class="form-control" id="username" placeholder="Nguyễn Văn A">
+      <input type="text" class="form-control" id="username" placeholder="Nguyễn Văn A">
+      <span class="hihe error" id="name-error"></span>
     </div>
   </div>
   <div >
     <label class="control-label col-sm-4  " for="email">Email:</label>
     <div class="col-sm-4">
       <input type="email" class="form-control" id="email" placeholder="nguyenvana@gmail.com">
+      <span class="hihe error" id="email-error"></span>
     </div>
   </div></div>
   <div class="form-group">
     <label class="control-label col-sm-4" for="pwd">Mật khẩu:</label>
     <div class="col-sm-4"> 
-      <input type="password" class="form-control" id="pwd" placeholder="Nhập Mật Khẩu">
+      <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Nhập Mật Khẩu">
+      <span class="hihe error" id="pwd-error"></span>
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-4" for="pwd">Nhập lại Mật khẩu:</label>
+    <label class="control-label col-sm-4" for="confirm_pass">Nhập lại Mật khẩu:</label>
     <div class="col-sm-4"> 
-      <input type="password" class="form-control" id="pwd" placeholder="Nhập lại Mật Khẩu">
+      <input type="password" name="confirm_pass" class="form-control" id="confirm_pass" placeholder="Nhập lại Mật Khẩu">
+      <span class="hihe error" id="confirm-error"></span>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-4" for="tel">Số điện thoại:</label>
     <div class="col-sm-4"> 
       <input type="tel" class="form-control" id="usrtel" placeholder="0123456798">
+      <span class="hihe error" id="tel-error"></span>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-4" for="date">Ngày sinh:</label>
     <div class="col-sm-4"> 
-      <input type="date" class="form-control" id="bday" placeholder="Nhập ngày sinh">
+      <input type="date" namr="age" class="form-control" id="age" placeholder="Nhập ngày sinh">
+       <span class="hihe error" id="age-error"></span>
     </div>
   </div>
   
