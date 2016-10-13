@@ -67,6 +67,10 @@
     font-size: 17px;
     background-color: #F8E0F7;
     }
+#myModal a{
+    color: red;
+    text-decoration: none;
+}
 .form-group{
     text-align: center;
     margin:5px;
