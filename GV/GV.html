@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Giảng Viên</title>
 	<link rel="stylesheet" href="css/BoCuc.css">
+	<link rel="stylesheet" href="css/Responsive.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
 	<style type="text/css">
 
 	</style>
@@ -17,25 +19,25 @@
 <body>
 
 <div id="main"><b>
-	<img src="img\banner.jpg" alt="Banner" width="1300px" height="150px" >
+	<img src="img\banner.jpg" alt="Banner" class="img-responsive" width="1300px" height="150px" >
 	<div id="navbar">
 		<nav class="navbar" >
-			<div class="container-fluid">
-				<div class="navbar-header">
+			<div class="container-fluid col-12 col-lg-12">
+				<!--<div class="navbar-header">
 						<a href="#"></a>
-				</div>
-					<ul class="nav navbar-nav" >
+				</div>-->
+					<ul class="nav navbar-nav navbar" >
 						<li ><a href="#">Trang Chủ</a></li>
 						<li ><a href="#">Giới Thiệu</a></li>
 						<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa Học<span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa Học<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Lập Trình C</a></li>
 								<li><a href="#">Lập Trình Java</a></li>
 								<li><a href="#">Lập Trình Web</a></li> 
 							</ul>
 						</li>
-						<li><a href="/GiangVien.html">Giảng Viên</a></li> 
+						<li><a href="GV.html">Giảng Viên</a></li> 
 						<li><a href="HoTro.html">Hỗ Trợ</a></li> 
 					</ul>
 				<ul class="nav navbar-nav navbar-right">

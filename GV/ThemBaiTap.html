@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
 	<style type="text/css">
 
 	</style>
@@ -86,18 +87,33 @@
 		<label class="fieldinput col-sm-3">Tên bài tập: </label>
 		<input type="text" class="form-control">
 	</div><br>
+	
 	<div class="form-inline">
-		<label class="fieldinput col-sm-3">Nội dung: </label>
-			<textarea cols="30" rows="2"></textarea>
-	</div><br>
+		<label class="fieldinput col-sm-3">Mã Lớp: </label>
+		<input type="text" class="form-control">
+	</div><br>	
+	
+
 	<div class="form-inline">
 		<label class="col-sm-3" for="exampleInputFile">Tải lên bài tập: </label>
 		<input type="file" id="InputFile">
 	</div><br>
+	
 	<div class="form-inline">
-		<label class="fieldinput col-sm-3">Thời Gian Nộp: </label>
-		<input type="text" class="form-control">
+		<label class="fieldinput col-sm-3">Ngày Nộp: </label>
+		<input type="date" class="form-control">
 	</div><br>
+	
+		<div class="form-inline">
+		<label class="fieldinput col-sm-3">Thời Gian Nộp: </label>
+		<input type="time" class="form-control">
+	</div><br>
+	
+	<div class="form-inline">
+		<label class="fieldinput col-sm-3">Nội dung: </label>
+			<textarea cols="30" rows="2"></textarea>
+	</div><br>	
+	
 	<div class="form-inline">
 		<button type="submit">Thêm Bài Tập</button>
 	</div>

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
 	<style type="text/css">
 
 	</style>
@@ -86,34 +87,57 @@
 		<button type="submit"><a href="ThemBaiTap.html">Thêm Bài Tập</a></button>
 		<button type="submit"><a href="BTDaNop.html">Bài Tập Đã Nộp</a></button>
 	</div>
-	
-			  <table class="table" align="center">
-				<thead align="center">
-				  <tr>
-					<th>STT</th>
-					<th>Tên Bài Tập</th>
-					<th>Thời Gian Nộp</th>
-					<th> </th>
-				  </tr>
-				</thead>
-				<tbody>
-					<tr>
-					  <td>1</td>
-					  <td>Vòng Lặp</td>
-					  <td>20:00:00 25/06/2016</td>
-					  <td><a href="ChiTietBaiTap1.html">Xem chi tiết</a></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Chương Trình Con</td>
-						<td>20:00:00 1/07/2016</td>
-						<td><a href="ChiTietBaiTap2.html">Xem chi tiết</a></td>
-					</tr>
-				</tbody>
-				
-				
-			  </table>
-		</div>
+	<table class="table" align="center">
+		<thead align="center">
+		<tr>
+			<th>STT</th>
+			<th>Mã Lớp</th>
+			<th>Tên Bài Tập</th>
+			<th>Thời Gian Nộp</th>
+			<th> </th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>141101</td>
+				<td>Vòng Lặp</td>
+				<td>20:00:00 25/06/2016</td>
+				<td><a href="ChiTietBaiTap1.html">Xem chi tiết</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>141101</td>
+				<td>Chương Trình Con</td>
+				<td>20:00:00 1/07/2016</td>
+				<td><a href="ChiTietBaiTap2.html">Xem chi tiết</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+var ungdungAngularjs = angular.module("ungdungAngularjs", []);
+
+ungdungAngularjs.controller('sinhvienController', function($scope) {
+   $scope.sinhvien = {
+      ho: "Tran Minh",
+      ten: "Chinh",
+      hocphi:200,
+      tenMonHoc:[
+         {ten:'Vat Ly Dai Cuong',diemthi:7.0},
+         {ten:'Triet Hoc',diemthi:8.5},
+         {ten:'Toan',diemthi:7.5},
+		 {ten:'Tieng Anh',diemthi:9.5},
+		 {ten:'Kinh Te',diemthi:9.0}
+      ],
+      hoten: function() {
+         var doituongsinhvien;
+         doituongsinhvien = $scope.sinhvien;
+         return doituongsinhvien.ho + " " + doituongsinhvien.ten;
+      }
+   };
+});
+</script>
 
 
 </body>

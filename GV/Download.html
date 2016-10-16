@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Download</title>
+	<link rel="stylesheet" href="css/BoCuc.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+<style type="text/css">
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.a-btn{
+    border-radius: 50px;
+    padding: 10px 30px 10px 70px;
+    position: relative;
+    float:left;
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 74%,rgba(237,237,237,1) 100%);
+    box-shadow:
+        0px 0px 7px rgba(0,0,0,0.2),
+        0px 0px 0px 1px rgba(188,188,188,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.a-btn-symbol{
+    font-family: 'WebSymbolsRegular', cursive;
+    color: #555;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    position:absolute;
+    left: 20px;
+    line-height: 32px;
+    transition: opacity 0.3s ease-in-out;
+}
+.a-btn-text{
+    font-size: 20px;
+    color: #d7565b;
+    line-height: 16px;
+    font-weight: bold;
+    font-family: "Myriad Pro", "Trebuchet MS", sans-serif;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    display: block;
+}
+.a-btn-slide-text{
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+}
+.a-btn-slide-icon{
+    position:absolute;
+    top:-30px;
+    width: 22px;
+    height: 22px;
+    background: transparent url(../images/arrow_down_black.png) no-repeat top left;
+    left:20px;
+    opacity: 0.4;
+}
+Và đây là hiệu ứng khi chúng ta rê chuột vào nút bấm (hover):
+
+
+.a-btn:hover{
+    background: #fff;
+    box-shadow:
+        0px 0px 9px rgba(0,0,0,0.4),
+        0px 0px 0px 1px rgba(188,188,188,0.1);
+}
+.a-btn:hover .a-btn-symbol{
+    opacity: 0;
+}
+.a-btn:hover .a-btn-slide-icon{
+    -webkit-animation: slideDown 0.9s linear infinite;
+}
+Khi chúng ta nhấn vào nút, thì nút bấm sẽ chuyển sang màu đỏ
+
+.a-btn:active{
+    background: #d7565b;
+    box-shadow:
+        0px 2px 2px rgba(0,0,0,0.6) inset,
+        0px 0px 0px 1px rgba(188,188,188,0.1);
+}
+.a-btn:active .a-btn-text{
+    color: #fff;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.a-btn:active .a-btn-slide-text{
+    color: rgba(0,0,0,0.4);
+    text-shadow: none;
+}
+
+@keyframes slideDown {
+    0% { top: -30px; }
+    100% { top: 80px;}
+}
+</style>
+</head>
+<body>
+<a href="#" class="a-btn">
+    <span class="glyphicon glyphicon-download-alt"></span>
+    <span class="a-btn-text">Tải xuống</span>
+
+</a>
+</body>
