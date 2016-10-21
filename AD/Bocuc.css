@@ -132,3 +132,8 @@
 .chitiet{
     margin-top: 10px;
 }
+.nav-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
