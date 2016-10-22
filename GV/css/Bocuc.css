@@ -2,10 +2,6 @@
     font-family: Arial, Tahoma;
     font-size: 12px;
 }
-
-table{
-	align:center;
-}
  
 #main{
     width: 1300px;
@@ -35,7 +31,7 @@ table{
      min-height: 500px;
      border: 5px solid #CDCDCD;
      float:left;
-     margin-left: 30px;
+     color: #8258FA;
      margin-bottom: 5px;
 }
 #content{
@@ -55,13 +51,15 @@ table{
      border: 5px solid #CDCDCD;
      float:right;
      margin-bottom: 5px;
-     background-color: blue;
+     color: #8258FA; 
 }
 #footer{
      height: 50px;
      clear: both;
      border: 1px solid #CDCDCD;
      background-color: purple;
+     color: yellow;
+     text-align: center;
 }
 #navbar{
     max-height: 65px;
@@ -69,6 +67,10 @@ table{
     font-size: 17px;
     background-color: #F8E0F7;
     }
+#myModal a{
+    color: red;
+    text-decoration: none;
+}
 .form-group{
     text-align: center;
     margin:5px;
@@ -105,4 +107,28 @@ table{
     text-transform: uppercase;
     font-weight: bold;
     border: none;
+}
+.list-group{
+    color: black;
+    font-size: 13px
+}
+#myCarousel{
+    text-align: center;
+    width: 850px;
+    margin-bottom: 10px;
+}
+.img567{
+    padding: 5px;
+    margin-top:5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    display: inline;
+}
+.pjm{
+    font-size: 20px;
+    margin-top: 10px;
+    color:yellow;
+}
+.chitiet{
+    margin-top: 10px;
 }
