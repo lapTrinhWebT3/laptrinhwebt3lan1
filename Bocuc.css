@@ -3,13 +3,13 @@
     font-size: 12px;
 }
  
-#main{
+/*#main{
     width: 1300px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-}
+}*/
 #head{
     height: 100px;
     background-color: blue;
@@ -27,9 +27,9 @@
      
 }
 #left{
-     width: 200px;
+     width: 190px;
      min-height: 500px;
-     border: 5px solid #CDCDCD;
+
      float:left;
      color: #8258FA;
      margin-bottom: 5px;
@@ -37,9 +37,7 @@
 #content{
      font-size: 17px;
      width: 890px;
-     min-height: 500px;
-     border: 5px solid #CDCDCD;
-     float:left;
+    
      margin-left: 5px;
      margin-right: 5px;
      margin-bottom: 5px;
@@ -48,7 +46,7 @@
 #right{
      width: 200px;
      min-height: 500px;
-     border: 5px solid #CDCDCD;
+    
      float:right;
      margin-bottom: 5px;
      color: #8258FA; 
@@ -115,7 +113,7 @@
 #myCarousel{
     text-align: center;
     width: 850px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 .img567{
     padding: 5px;
@@ -131,4 +129,84 @@
 }
 .chitiet{
     margin-top: 10px;
+}
+@media screen  and (min-width: 1024px)
+{
+    #main{
+        max-width: 1280px;
+        margin: 0 auto;
+
+    }
+}
+#main{
+    overflow: hidden;
+  
+}
+
+#main img{
+    max-width:100%;
+}
+
+#main #content{
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+
+@media (max-width: 767px) { /*-- Change max-width from 768 to 767 --*/
+ .navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+
+/*.navbar-collapse.collapse {
+    display: none!important;
+}*/  /*-- Disable this, suggest remove - this cause the menu disappear as soon as it toogle in --*/
+.navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+    position:relative;  /*-- New attribute --*/
+    z-index:9999;   /*-- New attribute --*/
+    background-color:#fff;  /*-- New attribute --*/
+}
+.navbar-nav>li {
+    float: none;
+
+}
+/*#navbar ,.navbar-default {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #dddddd;
+}
+.navbar.navbar-default {
+    
+    border-color: rgb(255, 255, 255);
+}
+#navbar
+{
+   background-color: rgb(215, 151, 211);
+    border-color: rgb(255, 255, 255); 
+}
+.navbar.navbar-default {
+    background-color: rgb(166, 84, 174);
+    border-color: #dddddd;*/
+    
+          
+           
+}
+    }
+    navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: rgb(238, 189, 235);
+}
+
+  .navbar-default {
+    background-color: rgb(238, 189, 235);
+}
+.panel
+{
+    border: 5px solid #CDCDCD;
 }
