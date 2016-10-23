@@ -19,30 +19,33 @@
     
 
    
-   <div id="navbar">
-    <nav class="navbar" >
-
+   <div id="navbar" >
+    <nav class="navbar navbar-default"  >
   <div class="container-fluid">
     <div class="navbar-header">
-    <b>
-    
-     <a href="#"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-index-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html">Trang Chủ</a>
     </div>
-
+<div class="collapse navbar-collapse" id="bs-index-navbar-collapse-1">
     <ul class="nav navbar-nav" >
-      <li ><a href="index.html">Trang Chủ</a></li>
+    
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa Học
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="laptrinhc.html">Lập Trình C</a></li>
+          <li><a href="#">Lập Trình C</a></li>
           <li><a href="#">Lập Trình Java</a></li>
           <li><a href="#">Lập Trình Web</a></li> 
         </ul>
       </li>
       <li><a href="#">Giáo Viên</a></li> 
       <li><a href="#">Hỗ Trợ</a></li> 
-      <li>
+       <li>
       <form role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -50,6 +53,7 @@
       </form>
       <li>
     </ul>
+   
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
       
@@ -58,25 +62,28 @@
     </ul>
   
   </div>
-  </b>
+
 </nav>
 </div>
 
-    <div id="left">
-    <h4 align="center">CÁC CUỘC THI</h4>
+    <div id="left" >
+    <div class="panel panel-default" >
+  <div class="panel-body">
+    <a href="index/khoahoc.html"><h4 align="center">KHÓA HỌC MỚI</h4></a>
     <ul class="list-group">
-     <a href="#" class="list-group-item ">Đánh giá năng lực - Hóa học</a>
-     <a href="#" class="list-group-item ">Đánh giá năng lực - Anh văn</a>
-     <a href="#" class="list-group-item ">Đánh giá năng lực - Vật lý</a>
-     <a href="#" class="list-group-item ">Đánh giá năng lực - C++</a>
-     <a href="#" class="list-group-item ">Đánh giá năng lực - Toán A1 </a>
+     <a href="#" class="list-group-item ">Lập trình C++</a>
+     <a href="#" class="list-group-item ">Toán A1</a>
+     <a href="#" class="list-group-item ">Lập Trình Web</a>
+     <a href="#" class="list-group-item ">Điện tử căn bản</a>
+     <a href="#" class="list-group-item ">Toán rời rạc</a>
     </ul>
+
      <h4 align="center">ĐẠI HỌC</h4>
     <ul class="list-group">
      <a href="#" class="list-group-item ">Hóa học đại cương</a>
      <a href="#" class="list-group-item ">Anh văn 1</a>
      <a href="#" class="list-group-item ">Vật lý đại cương</a>
-     <a href="laptrinhc.html" class="list-group-item ">Lập Trình C++</a>
+     <a href="index\laptrinhc.html" class="list-group-item ">Lập Trình C++</a>
      <a href="#" class="list-group-item ">Toán cao cấp</a>
     </ul>
     <h4 align="center">PHỔ THÔNG</h4>
@@ -87,9 +94,12 @@
      <a href="#" class="list-group-item ">Hóa học</a>
      <a href="#" class="list-group-item ">Sinh học</a>
     </ul>
+     </div></div>
     </div>
 
-    <div id="content">
+    <div id="content" style="max-width: 68%">
+    <div class="panel panel-default">
+  <div class="panel-body">
         <div class="course-detail" data-anchor="course-detail">
                 <h2 class="course-detail-stitle">Mô tả khóa học</h2>
                 <div class="course-detail-description">
@@ -140,9 +150,11 @@
     <dd>- Sử dụng Lưu đồ </dd>
   </dl>
 
-
+</div></div>
 </div>
     <div id="right">
+     <div class="panel panel-default">
+  <div class="panel-body">
     <h4 align="center">TÀI LIỆU</h4>
     <ul class="list-group">
      <a href="#" class="list-group-item ">Hóa học đại cương</a>
@@ -157,6 +169,7 @@
      <a href="fit.hcmute.edu.vn" class="list-group-item ">Khoa CNTT</a>
      <a href="google.com" class="list-group-item ">Google</a>
     </ul>
+      </div></div>
     </div>
 
     <div id="footer">

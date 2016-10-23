@@ -14,17 +14,21 @@
 
 <div id="main">
 <img src="picture\banner.jpg" width="1300px" height="150px" >
-   <div id="navbar">
-    <nav class="navbar" >
+    <div id="navbar" >
+    <nav class="navbar navbar-default"  >
   <div class="container-fluid">
     <div class="navbar-header">
-    <b>
- 
-     <a href="#"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-index-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html">Trang Chủ</a>
     </div>
-
+<div class="collapse navbar-collapse" id="bs-index-navbar-collapse-1">
     <ul class="nav navbar-nav" >
-      <li ><a href="index.html">Trang Chủ</a></li>
+    
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa Học
         <span class="caret"></span></a>
@@ -36,21 +40,24 @@
       </li>
       <li><a href="#">Giáo Viên</a></li> 
       <li><a href="#">Hỗ Trợ</a></li> 
-      <li>
+       <li>
       <form role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
       </form>
       <li>
-     
     </ul>
+   
     <ul class="nav navbar-nav navbar-right">
-      <p  class="navbar-text" style="color:red">HocSinh</p>
-      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Xuất</a></li>
+      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
+      
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
+
     </ul>
-    </div>
-  </b>
+  
+  </div>
+
 </nav>
 </div>
     <div id="left" style="border:0px">
@@ -75,10 +82,10 @@
     </ul>
     </div>
 
-<div id="content" style="border:0px;margin-left:40px;width:1055px" >
+<div id="content" style=" width:84%;" >
   <h4 align="center" style="background-color:#8258FA;color:white;line-height: 40px;font-size:17px" >Đăng kí khóa học </h4>
       <table class="table table-striped" style="font-size:15px">
-    <thead>
+    <thead >
       <tr>
         <th>Tên khóa học</th>
         <th>Tên giảng viên</th>
@@ -91,7 +98,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr >
         <td>Lập trình C++</td>
         <td>NguyễnPhước</td>
         <td>20/7/2016</td>
@@ -102,7 +109,7 @@
           <label><input type="checkbox"></label>
         </td>
       </tr>
-      <tr>
+      <tr >
         <td>Toán cao cấp</td>
         <td>Nguyễn Hùng</td>
         <td>19/5/2015</td>
@@ -113,7 +120,7 @@
           <label><input type="checkbox"></label>
         </td>
       </tr>
-      <tr>
+      <tr >
         <td>Hóa học đại cương</td>
         <td>Nguyễn Thị Nguyễn</td>
         <td>20/7/2016</td>
@@ -124,7 +131,7 @@
           <label><input type="checkbox"></label>
         </td>
       </tr>
-       <tr>
+       <tr >
         <td>Lập trình Java</td>
         <td>NguyễnPhước</td>
         <td>20/7/2016</td>
@@ -166,7 +173,6 @@
 </div>
 </div>
 
-    
 
     <div id="footer"></div>
 

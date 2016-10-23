@@ -72,14 +72,15 @@
   <div class="form-group" class="row-signup mg40" >
     <label class="control-label col-sm-4" for="username">Họ và Tên:</label>
     <div class="col-sm-4"> 
-      <input type="text" class="form-control" id="username" placeholder="Nguyễn Văn A">
-      <span class="hihe error" id="name-error"></span>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Nguyễn Văn A">
+      <span class="hihe error"  id="name-error"></span>
+      
     </div>
   </div>
   <div >
     <label class="control-label col-sm-4  " for="email">Email:</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" id="email" placeholder="nguyenvana@gmail.com">
+      <input type="email" class="form-control" name="email" id="email" placeholder="nguyenvana@gmail.com">
       <span class="hihe error" id="email-error"></span>
     </div>
   </div></div>
@@ -87,7 +88,7 @@
     <label class="control-label col-sm-4" for="pwd">Mật khẩu:</label>
     <div class="col-sm-4"> 
       <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Nhập Mật Khẩu">
-      <span class="hihe error" id="pwd-error"></span>
+      <span class="hihe error"  id="pwd-error"></span>
     </div>
   </div>
   <div class="form-group">
@@ -98,9 +99,9 @@
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-4" for="tel">Số điện thoại:</label>
+    <label class="control-label col-sm-4"  for="usrtel">Số điện thoại:</label>
     <div class="col-sm-4"> 
-      <input type="tel" class="form-control" id="usrtel" placeholder="0123456798">
+      <input type="tel" class="form-control" name="usrtel" id="usrtel" placeholder="0123456798">
       <span class="hihe error" id="tel-error"></span>
     </div>
   </div>
@@ -122,7 +123,14 @@
 
     <div id="right" style="border:0px"></div>
 
-    <div id="footer"></div>
+    <div id="footer">
+      <div class="row">
+        <p>Số 1 Võ Văn Ngân, Thủ Đức, Tp. Hồ Chí Minh</p>
+      </div>
+      <div class="bottom-footer">
+        <div class ="col-md-5">Copyright W3school</div>
+      </div>
+    </div>
 
 </div>
 
