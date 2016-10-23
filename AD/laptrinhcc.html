@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
 <title> Học Trực Tuyến</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
   <link rel="stylesheet" href="Bocuc.css">
   <script src="js\jquery.min.js"></script>
   <script src="js\bootstrap.min.js"></script>
@@ -18,30 +18,33 @@
     
 
    
-   <div id="navbar">
-    <nav class="navbar" >
-
+   <div id="navbar" >
+    <nav class="navbar navbar-default"  >
   <div class="container-fluid">
     <div class="navbar-header">
-    <b>
-    
-     <a href="#"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-index-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html">Trang Chủ</a>
     </div>
-
+<div class="collapse navbar-collapse" id="bs-index-navbar-collapse-1">
     <ul class="nav navbar-nav" >
-      <li ><a href="index.html">Trang Chủ</a></li>
+    
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa Học
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="laptrinhc.html">Lập Trình C</a></li>
+          <li><a href="#">Lập Trình C</a></li>
           <li><a href="#">Lập Trình Java</a></li>
           <li><a href="#">Lập Trình Web</a></li> 
         </ul>
       </li>
       <li><a href="#">Giáo Viên</a></li> 
       <li><a href="#">Hỗ Trợ</a></li> 
-      <li>
+       <li>
       <form role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -49,6 +52,7 @@
       </form>
       <li>
     </ul>
+   
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
       
@@ -57,11 +61,13 @@
     </ul>
   
   </div>
-  </b>
+
 </nav>
 </div>
 
-    <div id="left">
+     <div id="left" >
+    <div class="panel panel-default" >
+  <div class="panel-body">
     <a href="index/khoahoc.html"><h4 align="center">KHÓA HỌC MỚI</h4></a>
     <ul class="list-group">
      <a href="#" class="list-group-item ">Lập trình C++</a>
@@ -70,12 +76,13 @@
      <a href="#" class="list-group-item ">Điện tử căn bản</a>
      <a href="#" class="list-group-item ">Toán rời rạc</a>
     </ul>
+
      <h4 align="center">ĐẠI HỌC</h4>
     <ul class="list-group">
      <a href="#" class="list-group-item ">Hóa học đại cương</a>
      <a href="#" class="list-group-item ">Anh văn 1</a>
      <a href="#" class="list-group-item ">Vật lý đại cương</a>
-     <a href="laptrinhc.html" class="list-group-item ">Lập Trình C++</a>
+     <a href="index\laptrinhc.html" class="list-group-item ">Lập Trình C++</a>
      <a href="#" class="list-group-item ">Toán cao cấp</a>
     </ul>
     <h4 align="center">PHỔ THÔNG</h4>
@@ -86,10 +93,13 @@
      <a href="#" class="list-group-item ">Hóa học</a>
      <a href="#" class="list-group-item ">Sinh học</a>
     </ul>
+     </div></div>
     </div>
 
-    <div id="content">
-    <div   style="margin-left: 15px;margin-right: 15px">
+
+    <div id="content" style="max-width: 68%">
+     <div class="panel panel-default" >
+  <div class="panel-body">
        <h3 style="color: blue;text-align: center">Bài 1: Giới Thiệu Lập Trình C </h3><br><br>
        <h5 style="color: blue">1.1 Mục tiêu</h5>
        <dl>
@@ -102,8 +112,8 @@
        <h5 style="color: blue">1.2 Lý thuyết</h5>
        <h6 style="color: orange">1.2.1 Ngôn ngữ lập trình (Programming Language)</h6>
        <p>Phần này chúng ta sẽ tìm hiểu một số khái niệm căn bản về thuật toán, chương trình, ngôn
-          ngữ lập trình. Thuật ngữ "thuật giải" và "thuật toán" dĩ nhiên có sự khác nhau song trong nhiều
-          trường hợp chúng có cùng nghĩa.</p>
+ngữ lập trình. Thuật ngữ "thuật giải" và "thuật toán" dĩ nhiên có sự khác nhau song trong nhiều
+trường hợp chúng có cùng nghĩa.</p>
         <h6 style="color: orange">1.2.2 Thuật giải (Algorithm) </h6>
             <p>Là một dãy các thao tác xác định trên một đối tượng, sao cho sau khi thực hiện một số
             hữu hạn các bước thì đạt được mục tiêu. Theo R.A.Kowalski thì bản chất của thuật giải:<br>
@@ -130,14 +140,17 @@
             <center><strong>Tìm, xây dựng thuật giải (trên giấy) → viết chương trình trên máy
             → dịch chương trình → chạy và thử chương trình </strong></center>
         </p>
-            <center><video width="500" height="400" controls>
+            <center><video width="40%" height="400" controls>
   <source src="video\video.mp4" type="video/mp4">
   
   Your browser does not support the video tag.
 </video></center>
+</div></div>
+
 </div>
-</div>
-    <div id="right">
+     <div id="right">
+     <div class="panel panel-default">
+  <div class="panel-body">
     <h4 align="center">TÀI LIỆU</h4>
     <ul class="list-group">
      <a href="#" class="list-group-item ">Hóa học đại cương</a>
@@ -152,10 +165,11 @@
      <a href="fit.hcmute.edu.vn" class="list-group-item ">Khoa CNTT</a>
      <a href="google.com" class="list-group-item ">Google</a>
     </ul>
+      </div></div>
     </div>
 
     <div id="footer">
-      <p class="pjm"> Số 1, Võ Văn Ngân, Thủ Đức, Tp. Hồ Chí Minh </p>
+      <p class="pjm"> Design by PJM </p>
     </div>
 
 </div>
