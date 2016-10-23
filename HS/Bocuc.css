@@ -71,10 +71,11 @@
      text-align: center;
 }
 #navbar{
-    max-height: 65px;
+    max-height: 45px;
     font-family: verdana;
     font-size: 17px;
-    background-color: #F8E0F7;
+    background-color: #b2b2b2;
+    color:red;
     }
 .form-group{
     text-align: center;
