@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Chi Tiết</title>
+	<title>Tài Liệu Học Tập</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,7 @@
 </head>
 
 <body ng-app="">
+
 
 <div id="main">     
 	<img src="img/banner.jpg" alt="Banner" width="1300px" height="150px" >
@@ -70,7 +71,7 @@
 			<a href="MKhoaHoc.html" class="list-group-item">
 			<span class="glyphicon glyphicon-plus"></span>Mở Khóa Học</a>
 		 
-			<a href="TL.html" class="list-group-item">
+			<a href="TL.html" class="list-group-item active">
 			<span class="glyphicon glyphicon-plus"></span>Tài Liệu Học Tập</a>
 		
 			<a href="KeHoach.html" class="list-group-item">
@@ -79,62 +80,46 @@
 			<a href="BaiTap.html" class="list-group-item">
 			<span class="#"></span>Bài Tập</a>
 			
-			<a href="BTTracNghiem.html" class="list-group-itema active">
+			<a href="BTTracNghiem.html" class="list-group-item">
 			<span class="#"></span>Bài Tập Trắc Nghiệm</a>
 		 
 			<a href="DanhSachLop.html" class="list-group-item">
 			<span class=""></span>Danh Sách Lớp</a>
 		</ul>
 	</div>
-
-
+	
 	<div id="content" style="border:0px;margin-left:20px;width:1055px" >
-		<h4 align="Center" style="background-color:#8258FA;color:white;line-height:40px;font-size:17px">Chi Tiết Bài Tập</h4>
-		<h4>Ngôn Ngữ Lập Trình</h4>
-		<h5>Thời gian: 10 phút. Số câu: 10 câu.</h5>
-		<h5>Câu 1: </h5>
-		<input type="radio" name ="C1"> <br>
-		<input type="radio" name ="C1"> <br>
-		<input type="radio" name ="C1"> <br>
+		<h4 align="Center" style="background-color:#8258FA;color:white;line-height:40px;font-size:17px">Tài Liệu Học Tập</h4>
+		<div class="btn-group">
+			<button type="button"><a href="ThemTL.html">Thêm Tài Liệu Học Tập</a></button>
+		</div>
+		<table class="table" align="center">
+			<thead align="center">
+			<tr>
+				<th>STT</th>
+				<th>Mã Lớp</th>
+				<th>Tên Môn Học</th>
+				<th>Xem Chi Tiết</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1411010</td>
+					<td>Nhập Môn Lập Trình</td>
+					<td><a href="ChiTietTL.html">Xem chi tiết</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>141111</td>
+					<td>Kỹ Thuật Lập Trình</td>
+					<td><a href="#">Xem chi tiết</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
-		<h5>Câu 2: </h5>
-		<input type="radio" name ="C2"> <br>
-		<input type="radio" name ="C2"> <br>
-		<input type="radio" name ="C2"> <br>
 
-		<h5>Câu 3: </h5>
-		<input type="radio" name ="C3"> <br>
-		<input type="radio" name ="C3"> <br>
-		<input type="radio" name ="C3"> <br>
-		<h5>Câu 4: </h5>
-		<input type="radio" name ="C4"> <br>
-		<input type="radio" name ="C4"> <br>
-		<input type="radio" name ="C4"> <br>
-		<h5>Câu 5: </h5>
-		<input type="radio" name ="C5"> <br>
-		<input type="radio" name ="C5"> <br>
-		<input type="radio" name ="C5"> <br>
-		<h5>Câu 6: </h5>
-		<input type="radio" name ="C6"> <br>
-		<input type="radio" name ="C6"> <br>
-		<input type="radio" name ="C6"> <br>
-		<h5>Câu 7: </h5>
-		<input type="radio" name ="C10"> <br>
-		<input type="radio" name ="C10"> <br>
-		<input type="radio" name ="C10"> <br>
-		<h5>Câu 8: </h5>
-		<input type="radio" name ="C7"> <br>
-		<input type="radio" name ="C7"> <br>
-		<input type="radio" name ="C7"> <br>
-		<h5>Câu 9: </h5>
-		<input type="radio" name ="C8"> <br>
-		<input type="radio" name ="C8"> <br>
-		<input type="radio" name ="C8"> <br>
-		<h5>Câu 10: </h5>
-		<input type="radio" name ="C9"> <br>
-		<input type="radio" name ="C9"> <br>
-		<input type="radio" name ="C9"> <br>
-	 </div>
 	<div id="footer">
 		<p class="pjm"> Số 1 Võ Văn Ngân, Thủ Đức, Tp. Hồ Chí Minh </p>
 	</div>
